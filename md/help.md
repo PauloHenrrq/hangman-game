@@ -2,19 +2,11 @@
 
 __letters.py__
 
-- Responsável pela criação da lista onde irá conter os TEMAS e as PALAVRAS para o jogo.
+- Responsável pela troca da palavra correta com a posição associada a palavra selecionada no jogo.
 
 __randomize__
 
-- Terá a funcionalidade de escolher de forma aleatória um dos TEMAS de "letters.py"
-
-__verify.py__
-
-- Essa será dividida em 2 atribuições, sendo elas:
-
--- VERIFICAR: Como dito, essa função irá verificar a palavra fornecida pelo usuário, vendo se há repetição, adicionando em uma lista de acertos OU de erros.
-
--- PROCESSAR TENTATIVA: A função irá retornar o resultado da verificação anterior, entregando mensagens e avisos ao usuário. Terá o  retorno de Fim de Jogo, mostrando se CONSEGUIU ou NÃO.
+- Terá a funcionalidade de criar a lista com as possíveis palavras para o jogo. Escolher de forma aleatória uma das palavras.
 
 __main.py__
 

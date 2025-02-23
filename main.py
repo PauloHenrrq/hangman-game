@@ -6,8 +6,8 @@ from verify import verify, process_atempt
 
 def hangman_game():
     palavra = randomize()
-    letras_corretas = set()
-    letras_incorretas = set()
+    letras_corretas = []
+    letras_incorretas = []
     numero_tentativas = 6
 
     print("Bem-vindo ao Jogo da Forca! 🚪")
@@ -23,5 +23,3 @@ def hangman_game():
         if (len(tentativa) > 1 or tentativa == ''):
             print("Você pode escrever somente 1 letra!")
             break   
-
-        
