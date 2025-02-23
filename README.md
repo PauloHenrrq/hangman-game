@@ -5,27 +5,36 @@
 ## 🔨 Tecnologia Utilizada:
 - **Python**
 
+## Envolvidos:
+
+- Paulo Henrique
+- Gyl Monteiro
+- Jose Roberto
+- Ysabelle
+- Levy Viana
+
 ## 📁 Modularização do Projeto:
 ```
 /meu-projeto  
-│── 📁**md**  
+│── 📁md  
 │   │── 📜backlog.md  
-│   │── 📜help.md  
-│── 📁**src**  
-│       │── 📜letters.py  
+│   │── 📜help.md
+│
+│── 📁src 
+│   │── 📜letters.py  
 │   │── 📜randomize.py  
-│   │── 📜verify.py  
+│   │── 📜verify.py
+│
 │── 📜main.py  
 │── ℹ README.md
 ```
-
 ## 📦 Instalação e inicialização:
 
-- **Clone o repositório**
-git clone https://github.com/PauloHenrrq/hangman-game.git
+1. **Clone o repositório**
+```git clone https://github.com/PauloHenrrq/hangman-game.git```
 
-- **Entre no diretório**
-cd hangman-game
+2. **Entre no diretório**  
+```cd hangman-game```
 
-- **Execute o Jogo da Forca**
-python main.py **OU** python3 main.py
+3. **Execute o Jogo da Forca**  
+```python main.py```
