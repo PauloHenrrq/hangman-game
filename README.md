@@ -8,12 +8,12 @@
 ## 📁 Modularização do Projeto:
 /meu-projeto  
 │── 📁**md**  
-    │── 📜backlog.md  
-    │── 📜help.md  
+│   │── 📜backlog.md  
+│   │── 📜help.md  
 │── 📁**src**  
-    │── 📜letters.py  
-    │── 📜randomize.py  
-    │── 📜verify.py  
+│   │── 📜letters.py  
+│   │── 📜randomize.py  
+│   │── 📜verify.py  
 │── 📜main.py  
 │── ℹ README.md  
 
