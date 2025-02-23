@@ -30,7 +30,7 @@
 ```
 ## 📦 Instalação e inicialização:
 
-1. **Clone o repositório**
+1. **Clone o repositório**  
 ```git clone https://github.com/PauloHenrrq/hangman-game.git```
 
 2. **Entre no diretório**  
