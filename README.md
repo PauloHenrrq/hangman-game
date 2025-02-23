@@ -6,6 +6,7 @@
 - **Python**
 
 ## 📁 Modularização do Projeto:
+```
 /meu-projeto  
 │── 📁**md**  
 │   │── 📜backlog.md  
@@ -15,7 +16,8 @@
 │   │── 📜randomize.py  
 │   │── 📜verify.py  
 │── 📜main.py  
-│── ℹ README.md  
+│── ℹ README.md
+```
 
 ## 📦 Instalação e inicialização:
 
