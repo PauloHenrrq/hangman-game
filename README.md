@@ -5,7 +5,7 @@
 ## 🔨 Tecnologia Utilizada:
 - **Python**
 
-## Envolvidos:
+## 🤝 Envolvidos:
 
 - Paulo Henrique
 - Gyl Monteiro
