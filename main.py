@@ -35,7 +35,7 @@ def hangman_game():
             numero_tentativas -=1
             letras_incorretas.append(letra_digitada)
 
-    resultaodo = verify_atempt(palavra, letras_corretas)
+    resultado = verify_atempt(palavra, letras_corretas)
 
 
 hangman_game()

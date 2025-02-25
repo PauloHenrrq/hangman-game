@@ -8,5 +8,4 @@ def randomize():
 
     palavra_aleatoria = random.choice(palavras)
     
-    
     return palavra_aleatoria
