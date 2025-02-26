@@ -1,20 +1,14 @@
-def process_atempt(palavra, letra_digitada):
+def verify_attempt(choice_user, choice_word, incorrect_letters):
 
-    if letra_digitada in palavra:
-        return letra_digitada
-    
+    if choice_user in choice_word:
+        indexes = [i for i, char in enumerate(choice_word) if char == choice_user]
+        return indexes
+    incorrect_letters.append(choice_word)
     return None
 
 
-def verify_atempt(palavra, letras_corretas):
-    tamanho_temp = 0
-    for letra in letras_corretas:
-        if letra in palavra:
-            tamanho_temp += palavra.count(letra)
-            if len(palavra) == tamanho_temp:
-                return('Você acertou')
-                
-    
-
-
-    
+def check_full_word(secret_choice_word):
+    for letter in secret_choice_word:
+        if letter == '_':
+            return False
+    return True
