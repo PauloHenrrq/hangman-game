@@ -1,5 +1,5 @@
 # Arquivo principal onde estará o conteúdo final.
-from src.database_fake import choice_word, secret_choice_word, incorrect_letters, max_attempt
+from src.database_fake import choice_word, secret_choice_word, incorrect_letters, max_attempt, moves
 from src.verify import verify_attempt, check_full_word
 
 # from src.randomize import randomize
@@ -9,9 +9,8 @@ from src.verify import verify_attempt, check_full_word
 # from verify import verify, process_atempt
 
 
-def hangman_game(
-    choice_word, secret_choice_word, incorrect_letters, max_attempt
-):
+
+def hangman_game(choice_word, secret_choice_word, incorrect_letters, max_attempt, moves):
     print(choice_word)
     print("Bem-vindo ao Jogo da Forca! 🚪")
     while max_attempt > 0:
@@ -38,10 +37,12 @@ def hangman_game(
 
         check_word = check_full_word(secret_choice_word)
         
+        moves +=1
         if check_word:
-            print(f'Parabéns, você alcançou seu resultado em {max_attempt} tentativas ')
+            print(f'\nParabéns, você alcançou seu resultado em {moves} jogadas ')
             print(f'A palavra era: {choice_word}')
+            print(f'Letras que você errou: {','.join(incorrect_letters)}')
             break
 
 
-hangman_game(choice_word, secret_choice_word, incorrect_letters, max_attempt)
+hangman_game(choice_word, secret_choice_word, incorrect_letters, max_attempt, moves)

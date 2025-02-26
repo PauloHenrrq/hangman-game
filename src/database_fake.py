@@ -6,4 +6,6 @@ secret_choice_word = ['_' for letter in choice_word]
 
 max_attempt = 6
 
+moves = 0
+
 incorrect_letters = []
