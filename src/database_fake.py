@@ -1,18 +1,72 @@
 from .randomize import randomize
 
 choice_word = randomize()
-# 'flauta'
 
 secret_choice_word = ['_' for letter in choice_word]
-# ["_", "_", "_", "_","_", "_"]
 
+hangman_stages = [
+    """
+       ------
+       |    |
+       |    O
+       |   /|\\
+       |   / \\
+       |   
+    """,
+    """
+       ------
+       |    |
+       |    O
+       |   /|\\
+       |   / 
+       |   
+    """,
+    """
+       ------
+       |    |
+       |    O
+       |   /|\\
+       |   
+       |   
+    """,
+    """
+       ------
+       |    |
+       |    O
+       |   /|
+       |   
+       |   
+    """,
+    """
+       ------
+       |    |
+       |    O
+       |    |
+       |   
+       |   
+    """,
+    """
+       ------
+       |    |
+       |    O
+       |   
+       |   
+       |   
+    """,
+    """
+       ------
+       |    |
+       |    
+       |   
+       |   
+       |   
+    """,
+]
 
-max_attempt = 6
-# máximo de tentativas
+max_attempt = 7
+
 
 moves = 0
-# Cada jogada do usuário
+
 
 incorrect_letters = []
-# Lista que conterá todas as letras que o usuário errar
-

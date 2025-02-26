@@ -1,14 +1,28 @@
-from src.database_fake import choice_word, secret_choice_word, incorrect_letters, max_attempt, moves
+from src.database_fake import (
+    choice_word,
+    secret_choice_word,
+    incorrect_letters,
+    max_attempt,
+    moves,
+    hangman_stages,
+)
 from src.verify import verify_attempt, check_full_word
 
 
-def hangman_game(choice_word, secret_choice_word, incorrect_letters, max_attempt, moves):
+def hangman_game(
+    choice_word,
+    secret_choice_word,
+    incorrect_letters,
+    max_attempt,
+    moves,
+    hangman_stages,
+):
     # print(choice_word)
     print("Bem-vindo ao Jogo da Forca! 🚪")
     while max_attempt > 0:
         print(f"Palavra: {"".join(secret_choice_word)} ")
-        print(f'Você tem {max_attempt} tentativas \n')
-        
+        print(f'Você tem {max_attempt} tentativas')
+        print(hangman_stages[max_attempt - 1])
 
         if max_attempt == 1:
             print('Essa é sua última tentativa. CUIDADO!')
@@ -27,12 +41,11 @@ def hangman_game(choice_word, secret_choice_word, incorrect_letters, max_attempt
         else:
             max_attempt -= 1
 
-
         if max_attempt == 0:
             print('Game Over macho véi')
 
         check_word = check_full_word(secret_choice_word)
-        
+
         moves +=1
         if check_word:
             print(f'\nParabéns, você alcançou seu resultado em {moves} jogadas ')
@@ -41,4 +54,11 @@ def hangman_game(choice_word, secret_choice_word, incorrect_letters, max_attempt
             break
 
 
-hangman_game(choice_word, secret_choice_word, incorrect_letters, max_attempt, moves)
+hangman_game(
+    choice_word,
+    secret_choice_word,
+    incorrect_letters,
+    max_attempt,
+    moves,
+    hangman_stages,
+)
