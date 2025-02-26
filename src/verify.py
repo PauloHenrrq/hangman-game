@@ -12,3 +12,5 @@ def check_full_word(secret_choice_word):
         if letter == '_':
             return False
     return True
+
+
