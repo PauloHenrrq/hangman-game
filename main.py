@@ -17,8 +17,8 @@ def hangman_game(
     moves,
     hangman_stages,
 ):
-    # print(choice_word)
-    print("Bem-vindo ao Jogo da Forca! 🚪")
+    #print(choice_word)
+    
     while max_attempt > 0:
         print(f"Palavra: {"".join(secret_choice_word)} ")
         print(f'Você tem {max_attempt} tentativas')
