@@ -21,8 +21,10 @@
 │   │── 📜help.md
 │
 │── 📁src 
-│   │── 📜letters.py  
-│   │── 📜randomize.py  
+│   │── 📜__init__.py
+│   │── 📜database_fake.py
+│   │── 📜randomize.py
+│   │── 📜verify.py
 │
 │── 📜main.py  
 │── ℹ README.md
