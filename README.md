@@ -31,6 +31,8 @@
 ```
 ## 📦 Instalação e inicialização:
 
+__É necessário o Python atualizado!__
+
 1. **Clone o repositório**  
 ```git clone https://github.com/PauloHenrrq/hangman-game.git```
 
